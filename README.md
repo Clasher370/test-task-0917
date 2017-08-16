@@ -5,10 +5,11 @@
 - [x] Должно назначать число
 > curl http://localhost:3000/api/sync/users/start
 > или
-> GiveWorker.start_work
+> User.start_work
 - [x] Возможность останавливать
 > curl http://localhost:3000/api/sync/users/stop
-> GiveWorker.stop_work
+> или
+> User.stop_work
 > или остановка sidekiq
 - [ ] Быть устойчивам к исключениям
 - [x] Масштабируемым
