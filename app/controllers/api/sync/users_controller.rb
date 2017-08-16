@@ -1,11 +1,11 @@
 class Api::Sync::UsersController < ApplicationController
   def start
-    @start = GiveWorker.start_work
+    @start = User.start_work
     render json: @start
   end
 
   def stop
-    @stop = GiveWorker.stop_work
+    @stop = User.stop_work
     render json: @stop
   end
 
